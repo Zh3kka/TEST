@@ -1,0 +1,25 @@
+@import '../../../../assets/styles/variables';
+
+.main {
+    .mainWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    > .description {
+        margin: 90px 0 110px;
+        > p {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #2A477D;
+            > span {
+                font-size: 14px;
+                font-weight: 500;
+                color: $main_border;
+            }
+        }
+    }
+}

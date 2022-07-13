@@ -1,0 +1,9 @@
+@import '../../assets/styles/variables';
+
+.wrapper {
+    max-width: 1264px;
+    height: 100%;
+    padding: 36px;
+    margin: 0 auto;
+    background: $bgc_accent;
+}

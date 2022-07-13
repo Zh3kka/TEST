@@ -1,0 +1,18 @@
+@import "../../../../assets/styles/variables";
+
+.header {
+    color: $header_color;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 44px;
+    > h1 {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    > p {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
