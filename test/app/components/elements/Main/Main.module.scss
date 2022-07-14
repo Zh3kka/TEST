@@ -24,3 +24,11 @@
         }
     }
 }
+
+@media screen and (max-width: 426px) {
+    .main {
+        .mainWrapper {
+            flex-wrap: wrap;
+        }
+    }
+}

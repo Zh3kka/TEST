@@ -65,12 +65,9 @@ const Footer: FC = () => {
           height={110}
         />
       </div>
-      <Image
-        src={caruselImg}
-        className={styles.caruselImg}
-        width={315}
-        height={315}
-      />
+      <div className={styles.caruselImg}>
+        <Image src={caruselImg} width={315} height={315} />
+      </div>
       <div className={styles.wrapper_5}>
         <div className={styles.plus}>
           <Image src={plus} height={61} width={61} />

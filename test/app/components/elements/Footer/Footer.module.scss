@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    // flex-wrap: wrap;
     > .wrapper_1 {
         display: inline-block;
         transform: translate(360px, 134px);
@@ -228,5 +227,129 @@
         &:hover::after {
             opacity: 1;
         }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .footer {
+        flex-wrap: wrap;
+        gap: 100px;
+        flex-direction: column;
+        padding: 0 0 60px 0;
+        > .wrapper_1 {
+            transform: none;
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Дыхательная недостаточность/ \Aреспираторная дисфункция";
+                top: 105px;
+                left: 7px
+            }
+        }
+        > .wrapper_2 {
+            transform: translate(0px, 0px);
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Ограниченная способность \Aподнимать руки \Aи переносить предметы";
+                top: 124px;
+                right: -77px;
+            }
+        }
+        > .wrapper_3 {
+            transform: translate(0px, 0px);
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Нарушения жевания \Aи глотания";
+                top: 127px;
+                right: -26px;
+            }
+        }
+        > .wrapper_4 {
+            transform: translate(0px, 0px);
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Скиллиоз";
+                top: 130px;
+                right: 18px;
+            }
+        }
+        > .wrapper_5 {
+            transform: translate(0px, 0px);
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Неспособность бегать, \Aизменение походки";
+                top: 123px;
+                right: -60px;
+            }
+        }
+        > .wrapper_6 {
+            transform: translate(0px, 0px);
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Контрактура \Aсуставов";
+                top: 127px;
+                right: -10px;
+            }
+        }
+        > .wrapper_7 {
+            transform: translate(0px, 0px);
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Вывих бедра";
+                top: 130px;
+                right: 0px;
+            }
+        }
+        > .wrapper_8 {
+            transform: translate(0px, 0px);
+            > .plus {
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                z-index: 2;
+            }
+            &::after {
+                content: "Утомляемость";
+                top: 131px;
+                right: -14px;
+            }
+        }
+    }
+    .caruselImg {
+        display: none;
     }
 }
