@@ -1,6 +1,6 @@
 import styles from "./Adult.module.scss";
 import Image from "next/image";
-import adultImg from "../../../../../public/images/adult.jpg";
+import adultImg from "../../../../../public/images/adult.png";
 
 interface IAdult {
   title: string;
@@ -25,7 +25,7 @@ const Adult = () => {
   return (
     <div className={styles.adultWrapper}>
       {Adultt.map((item) => (
-        <>
+        <div className={styles.container} key={item.title}>
           <h3>{item.title}</h3>
           <Image
             src={adultImg}
@@ -44,7 +44,7 @@ const Adult = () => {
               <p>{item.description3}</p>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   );

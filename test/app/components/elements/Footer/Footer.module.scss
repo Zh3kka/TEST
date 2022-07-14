@@ -1,0 +1,232 @@
+@import "../../../../assets/styles/variables";
+
+.footer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 76px 50px 120px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    // flex-wrap: wrap;
+    > .wrapper_1 {
+        display: inline-block;
+        transform: translate(360px, 134px);
+        position: relative;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: $header_color;
+            content: "Дыхательная недостаточность/ \Aреспираторная дисфункция";
+            top: 4px;
+            right: 80px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    > .wrapper_2 {
+        position: relative;
+        transform: translate(216px, 21px);
+        white-space: pre;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            color: $header_color;
+            line-height: 22px;
+            content: "Ограниченная способность \Aподнимать руки \Aи переносить предметы";
+            top: 4px;
+            right: 80px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    > .wrapper_3 {
+        position: relative;
+        margin: 0 18px;
+        transform: translate(138px, -102px);
+        white-space: pre;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: $header_color;
+            content: "Нарушения жевания \Aи глотания";
+            top: 8px;
+            right: 90px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    > .wrapper_4 {
+        position: relative;
+        white-space: pre;
+        transform: translate(166px, -170px);
+        z-index: 1;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            position: absolute;
+            display: inline-block;
+            content: "Скиллиоз";
+            font-weight: 700;
+            font-size: 18px;
+            color: $header_color;
+            line-height: 22px;
+            top: -32px;
+            right: 4px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    > .wrapper_5 {
+        position: relative;
+        transform: translate(-62px, -114px);
+        margin: 0 18px;
+        white-space: pre;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            color: $header_color;
+            line-height: 22px;
+            content: "Неспособность бегать, \Aизменение походки";
+            top: 16px;
+            right: -220px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    > .wrapper_6 {
+        position: relative;
+        transform: translate(-116px, 21px);
+        white-space: pre;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            color: $header_color;
+            line-height: 22px;
+            content: "Контрактура \Aсуставов";
+            top: 20px;
+            right: -130px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    > .wrapper_7 {
+        position: relative;
+        transform: translate(-278px, 134px);
+        white-space: pre;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            content: "Вывих бедра";
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            color: $header_color;
+            line-height: 22px;
+            top: 30px;
+            right: -130px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    > .wrapper_8 {
+        position: relative;
+        transform: translate(-511px, 190px);
+        white-space: pre;
+        > .plus {
+            position: absolute;
+            top: -20px;
+            left: -16px;
+            z-index: 2;
+        }
+        &::after {
+            content: "Утомляемость";
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            color: $header_color;
+            line-height: 22px;
+            top: 90px;
+            right: -30px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+}

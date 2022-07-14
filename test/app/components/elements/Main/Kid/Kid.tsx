@@ -1,6 +1,6 @@
-import styles from './Kid.module.scss';
+import styles from "./Kid.module.scss";
 import Image from "next/image";
-import kidImg from "../../../../../public/images/kid.jpg";
+import kidImg from "../../../../../public/images/kid.png";
 
 interface IKid {
   title: string;
@@ -22,14 +22,9 @@ const Kid = () => {
   return (
     <div className={styles.kidWrapper}>
       {Kidd.map((item) => (
-        <>
+        <div className={styles.container} key={item.title}>
           <h3>{item.title}</h3>
-          <Image
-            src={kidImg}
-            alt="Ребенок"
-            width={300}
-            height={300}
-          />
+          <Image src={kidImg} alt="Ребенок" width={300} height={300} />
           <div className={styles.descriptions}>
             <div>
               <p>{item.description1}</p>
@@ -38,7 +33,7 @@ const Kid = () => {
               <p>{item.description2}</p>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   );
